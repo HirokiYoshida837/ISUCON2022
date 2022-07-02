@@ -20,7 +20,8 @@
     "collect-instanceinfo": "zx ./zx-scripts/utils/collect-instanceinfo.mjs",
     "datadog-setup": "zx ./zx-scripts/datadog/datadog-setup.mjs",
     "datadog-check": "zx ./zx-scripts/datadog/datadog-check.mjs",
-    "datadog-apmlog": "zx ./zx-scripts/datadog/datadog-apmlog.mjs"
+    "datadog-apmlog": "zx ./zx-scripts/datadog/datadog-apmlog.mjs",
+    "git-pull-f": "zx ./zx-scripts/git/git-pull-f.mjs"
   },
   "keywords": [],
   "author": "",
