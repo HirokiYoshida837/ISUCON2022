@@ -1,0 +1,33 @@
+{
+  "name": "go",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "zx ./zx-scripts/build/prebuild.mjs",
+    "build": "zx ./zx-scripts/build/build.mjs",
+    "postbuild": "zx ./zx-scripts/build/postbuild.mjs",
+    "predeploy": "zx ./zx-scripts/deploy/predeploy.mjs",
+    "deploy": "npm run build",
+    "postdeploy": "zx ./zx-scripts/deploy/postdeploy.mjs",
+    "monitor-logs": "zx ./zx-scripts/monitoring/log.mjs",
+    "monitor-dstat": "zx ./zx-scripts/monitoring/dstat.mjs",
+    "hello": "zx ./zx-scripts/hello-world.mjs",
+    "log-rotate": "zx ./zx-scripts/utils/logrotate.mjs",
+    "log-clear": "zx ./zx-scripts/utils/log-clear.mjs",
+    "mysql-loadconfig": "zx ./zx-scripts/utils/mysql-loadconfig.mjs",
+    "setup": "zx ./zx-scripts/utils/setup.mjs",
+    "collect-instanceinfo": "zx ./zx-scripts/utils/collect-instanceinfo.mjs",
+    "datadog-setup": "zx ./zx-scripts/datadog/datadog-setup.mjs",
+    "datadog-check": "zx ./zx-scripts/datadog/datadog-check.mjs",
+    "datadog-apmlog": "zx ./zx-scripts/datadog/datadog-apmlog.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "zx": "^7.0.6",
+    "gtop": "^1.1.3"
+  }
+}
