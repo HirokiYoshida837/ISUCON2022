@@ -6,6 +6,7 @@ import { access, constants, rename } from 'node:fs';
 
 const APP_NAME = 'isucondition'
 
+cd('/home/isucon/webapp/go')
 
 // move old binary files.
 access(APP_NAME, constants.F_OK, (err) =>

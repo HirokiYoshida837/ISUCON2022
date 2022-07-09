@@ -3,8 +3,8 @@
 console.log(chalk.yellow("--- --- --- setup --- --- ---"))
 
 // await setUpNpmCompletion();
-await installPackages();
-// await initializeGit(); // そもそもgit pushしてるはずなので不要
+// await installPackages();
+await initializeGit();
 
 // async function setUpNpmCompletion()
 // {
@@ -14,19 +14,19 @@ await installPackages();
 // }
 
 
-async function installPackages()
-{
-    console.log(chalk.cyan("--- --- --- install packages --- --- ---"))
+// async function installPackages()
+// {
+//     console.log(chalk.cyan("--- --- --- install packages --- --- ---"))
 
-    const packages = [
-        'htop', // for monitoring
-        'dstat', // for monitoring
-        'git',
-        'unzip'
-    ]
+//     const packages = [
+//         'htop', // for monitoring
+//         'dstat', // for monitoring
+//         'git',
+//         'unzip'
+//     ]
 
-    return await $`sudo apt install -y ${packages}`
-}
+//     return await $`sudo apt install -y ${packages}`
+// }
 
 
 async function initializeGit()
@@ -37,5 +37,6 @@ async function initializeGit()
     Promise.all([
         $`git config --global user.name "isucon"`,
         $`git config --global user.email "isucon@isucon"`
+        // $`git init`
     ])
 }

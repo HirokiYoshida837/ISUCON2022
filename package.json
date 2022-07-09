@@ -17,6 +17,7 @@
     "log-clear": "zx ./zx-scripts/utils/log-clear.mjs",
     "mysql-loadconfig": "zx ./zx-scripts/utils/mysql-loadconfig.mjs",
     "setup": "zx ./zx-scripts/utils/setup.mjs",
+    "gitpull": "zx zx-scripts/git/git-pull-f.mjs",
     "collect-instanceinfo": "zx ./zx-scripts/utils/collect-instanceinfo.mjs",
     "prebench": "npm run deploy",
     "bench": "zx ./zx-scripts/utils/start-bench.mjs"
